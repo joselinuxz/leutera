@@ -1,0 +1,11 @@
+<table style="width: 100%">
+	<tr class="white" bgcolor="#505050">
+		<td colspan="3">Tickers</td>
+	</tr>
+			<tr bgcolor="#D4C0A1">
+		<td style="width: 16px;"><img src="templates/tibiana/images/news/icon_3_small.gif"/></td>
+		<td style="width: 80px;">18 Mar 2024</td>
+		<td>https://my-aac.org</td>
+	</tr>
+		</table>
+<br/>

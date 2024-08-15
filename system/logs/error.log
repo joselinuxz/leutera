@@ -1,0 +1,25 @@
+[Sat, 09 Oct 2021 03:39:47 -0300] [OTS_MonstersList.php] Fatal error: Cannot load monsters.xml (/home/oldera/data/monster/monsters.xml). Error: Array
+(
+    [type] => 2
+    [message] => DOMDocument::load(): parsing XML declaration: '?&gt;' expected in /home/oldera/data/monster/monsters.xml, line: 1
+    [file] => /var/www/html/system/libs/pot/OTS_MonstersList.php
+    [line] => 70
+)
+
+[Sat, 09 Oct 2021 03:58:41 -0300] [OTS_MonstersList.php] Fatal error: Cannot load monsters.xml (/home/oldera/data/monster/monsters.xml). Error: Array
+(
+    [type] => 2
+    [message] => DOMDocument::load(): parsing XML declaration: '?&gt;' expected in /home/oldera/data/monster/monsters.xml, line: 1
+    [file] => /var/www/html/system/libs/pot/OTS_MonstersList.php
+    [line] => 70
+)
+
+[Sun, 26 Dec 2021 20:11:39 -0600] [load_config_file] Fatal error: Cannot load config.lua (/home/oldera/config.lua). Error: 
+[Mon, 18 Mar 2024 23:58:17 +0100] [OTS_MonstersList.php] Fatal error: Cannot load monsters.xml (/home/joselinux/Escritorio/oldera/SERVIDOR/data/monster/monsters.xml). Error: Array
+(
+    [type] => 2
+    [message] => DOMDocument::load(): parsing XML declaration: '?&gt;' expected in /home/joselinux/Escritorio/oldera/SERVIDOR/data/monster/monsters.xml, line: 1
+    [file] => /var/www/html/system/libs/pot/OTS_MonstersList.php
+    [line] => 70
+)
+

@@ -1,0 +1,1 @@
+a:3:{i:0;a:3:{s:4:"name";s:19:"create-account-hint";s:4:"type";i:16;s:4:"file";s:36:"plugins/account-create-hint/hint.php";}i:1;a:3:{s:4:"name";s:7:"startup";s:4:"type";i:1;s:4:"file";s:38:"plugins/gesior-shop-system/startup.php";}i:2;a:3:{s:4:"name";s:15:"Start Countdown";s:4:"type";i:2;s:4:"file";s:39:"plugins/start-countdown/before_page.php";}}
