@@ -1,0 +1,11 @@
+# Composer
+/vendor/
+
+# Instalador de Composer
+/composer-setup.php
+
+# Archivos y directorios específicos
+system/cache/twig/
+system/cache/*
+system/php_sessions/*
+.env

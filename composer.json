@@ -1,0 +1,9 @@
+{
+    "name": "sebaurr/html",
+    "type": "project",
+    "license": "colaborator",
+    "minimum-stability": "stable",
+    "require": {
+        "vlucas/phpdotenv": "^5.6"
+    }
+}
