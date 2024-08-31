@@ -86,7 +86,7 @@ $config = array(
 	),
 
 	// images
-	'outfit_images_url' => 'https://imperium-retro.com/outfits/animoutfit.php', // set to animoutfit.php for animated outfit
+	'outfit_images_url' => 'https://outfit-images.ots.me/outfit.php', // set to animoutfit.php for animated outfit
 	'item_images_url' => 'https://item-images.ots.me/1092/', // set to images/items if you host your own items in images folder
 
 	// account
@@ -184,7 +184,7 @@ $config = array(
 
 	// online page
 	'online_record' => true, // display players record?
-	'online_vocations' => false, // display vocation statistics?
+	'online_vocations' => true, // display vocation statistics?
 	'online_vocations_images' => false, // display vocation images?
 	'online_skulls' => false, // display skull images
 	'online_outfit' => true,

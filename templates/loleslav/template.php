@@ -8,76 +8,15 @@ defined('MYAAC') or die('Direct access not allowed!');
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 	<?php echo template_place_holder('head_start'); ?>
-	<link rel="shortcut icon" href="<?PHP echo $template_path; ?>/images/others/favicon.ico" type="image/x-icon">
-	<link rel="icon" href="<?PHP echo $template_path; ?>/images/others/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="<?PHP echo $template_path; ?>/images/server.ico" type="image/x-icon">
+	<link rel="icon" href="<?PHP echo $template_path; ?>/images/server.ico" type="image/x-icon">
 	<link rel="stylesheet" type="text/css" href="<?PHP echo $template_path; ?>/default.css" media="screen"/>
+	<link href="<?PHP echo $template_path; ?>/basic.css" rel="stylesheet" type="text/css">
 	<!--link rel="stylesheet" type="text/css" href="<?PHP echo $template_path; ?>/basic.css" media="screen"/-->
 	<title><?PHP echo $title; ?></title>
 	<?PHP echo $layout_header; ?>
 	<style type="text/css">
 		@import "layout.css";
-/* styles.css */
-.slider {
-    position: relative;
-    max-width: 100%;
-    overflow: hidden;
-	width: 520px;
-	filter: brightness(0.85) drop-shadow(2px 2px 2px black);
-	margin: 3px 7px 0 4px
-}
-
-.slides {
-    display: flex;
-    transition: transform 5s ease-in-out, opacity 5s ease-in-out;
-    width: 100%;
-}
-
-.slide {
-    min-width: 100%; /* Asegura que cada diapositiva ocupe el 100% del ancho del contenedor */
-    box-sizing: border-box;
-    opacity: 0; /* Oculta todas las diapositivas por defecto */
-    transition: opacity 2s ease-in-out;
-    position: absolute; /* Asegura que las diapositivas se superpongan */
-    top: 0;
-    left: 0;
-	border: 2px solid steelblue;
-}
-
-.slide img {
-    width: 100%;
-    display: block;
-}
-
-.show {
-    opacity: 1; /* Muestra solo la diapositiva actual */
-    position: relative; /* Asegura que la diapositiva actual esté en la posición correcta */
-}
-
-.prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-}
-
-.next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-}
-
-.prev:hover, .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-}
-
-
 	</style>
 	<?php echo template_place_holder('head_end'); ?>
 </head>
@@ -198,17 +137,66 @@ if (PAGE !== "news") {
 		<div id="box5" class="box-style4">
 			<div class="entry">
 				<h2 class="title"><center>Best players</center></h2>
-					<center>
+					<div id="Topbar" class="Themebox" style="background-image:url({{ template_path }}/images/themeboxes/highscores/highscores.png);">
+					<div class="top_level" style="background:url({{ template_path }}/images/themeboxes/bg_top.png)" align="	">
 		<?php
-						foreach(getTopPlayers(5) as $player)
-						{
-						 echo '<li class="bg6"><a href="' . getPlayerLink($player['name'], false) . '"  class="link2">' . $player['name'] . '</a><br>';
-						 echo '<em class="style2">Level: <b>' . $player['level'] . '</b></em></li>';
+						// foreach(getTopPlayers(5) as $player)
+						// {
+						//  echo '<li class="bg6"><a href="' . getPlayerLink($player['name'], false) . '"  class="link2">' . $player['name'] . '</a><br>';
+						//  echo '<em class="style2">Level: <b>' . $player['level'] . '</b></em></li>';
+						// }
+
+						$topPlayers = getTopPlayers(5);
+
+						foreach ($topPlayers as &$player) {
+							$outfit_url = '';
+							if ($config['online_outfit']) {
+								$outfit_url = $config['outfit_images_url'] . '?id=' . $player['looktype'] .
+											  (!empty($player['lookaddons']) ? '&addons=' . $player['lookaddons'] : '') .
+											  '&head=' . $player['lookhead'] .
+											  '&body=' . $player['lookbody'] .
+											  '&legs=' . $player['looklegs'] .
+											  '&feet=' . $player['lookfeet'];
+								$player['outfit'] = $outfit_url;
+							}
+							?>
+							<div style="text-align:left;margin: 0px 20px 14px 20px;">
+								<a href="<?= getPlayerLink($player['name'], false); ?>" class="topfont <?= $player['online'] ? 'online' : 'offline'; ?>">
+									<?php if ($config['online_outfit']) { ?>
+										<img style="position:absolute;
+													margin-top:<?= in_array($player['looktype'], [75, 266, 302]) ? '-20px' : '-35px'; ?>;
+													margin-left:<?= in_array($player['looktype'], [75, 266, 302]) ? '0px' : '-25px'; ?>;"
+											 src="<?= $player['outfit']; ?>" 
+											 alt="player outfit"/>
+									<?php } ?>
+									<span style="color: #CCC; margin-left: 52px"><?= $player['rank']; ?> - </span>
+									<?= $player['name']; ?>
+									<br>
+									<small style="margin-left:7px">
+										<span style="color: white; margin-left: 50px">
+											Level: (<?= $player['level']; ?>)
+										</span>
+									</small>
+									<br>
+								</a>
+							</div>
+							<?php
 						}
-		?>
-					</center>
-			</div>
-		</div>
+						
+						?>
+						
+						<!-- // Renderizar la plantilla Twig
+						$twig->display('highscorex.html.twig', array(
+							'topPlayers' => $topPlayers,
+							'config' => $config // Asegúrate de pasar el config si lo usas en Twig
+						));
+						 -->
+						 
+						 </div>
+						 </div>
+
+</div>
+</div>
         <?php
         if($config['template_allow_change']):
         ?>

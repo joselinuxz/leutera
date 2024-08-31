@@ -1,3 +1,69 @@
+<style>
+.progress {
+    display: -ms-flexbox;
+    display: flex;
+    height: 1rem;
+    overflow: hidden;
+    font-size: .75rem;
+    background-color: #e9ecef;
+    border-radius: 0.25rem;
+}
+.progress {
+    height: 18px;
+    margin-bottom: 0;
+    border: 1px solid;
+}
+.progress-bar {
+    font-size: 11px;
+    line-height: 16px;
+}
+.progress-bar {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    color: #fff;
+    background-color: #007bff;
+}
+.bg-danger {
+	background-color: #dc3545!important;
+}
+.bg-default {
+	background-color: #007bff;
+}
+.bg-success {
+	background-color: #28a745!important;
+}
+.btn_clipboard {
+	border: 0;
+    padding: 7px 5px;
+    font-size: 10px;
+    position: absolute;
+    right: 22px;
+    margin-top: -12px;
+    background-color: #5f4d41;
+    color: #fff;
+    cursor: pointer;
+}
+.btn_clipboard:hover{
+	background-color: #fff;
+	color: #007bff;
+}
+.input_clipboard{
+	border-radius: 0.3rem;
+	border: 0;
+	padding: 5px;
+}
+b{
+        font-size:13px;
+    }
+    td {
+        font-size:13px;
+    }
+</style>
+
 <?php
 /**
  * Characters
@@ -47,7 +113,7 @@ if(isset($_REQUEST['name']))
 if(empty($name))
 {
 	$tmp_link = getPlayerLink($name);
-	echo 'Here you can get detailed information about a certain player on ' . $config['lua']['serverName'] . '.<BR>';
+	// echo 'Here you can get detailed information about a certain player on ' . $config['lua']['serverName'] . '.<BR>';
 	echo generate_search_form(true);
 	return;
 }
@@ -147,9 +213,10 @@ if($player->isLoaded() && !$player->isDeleted())
 	if($config['characters']['skills'])
 	{
 		if($db->hasColumn('players', 'skill_fist')) {// tfs 1.0+
-			$skills_db = $db->query('SELECT `skill_fist`, `skill_club`, `skill_sword`, `skill_axe`, `skill_dist`, `skill_shielding`, `skill_fishing` FROM `players` WHERE `id` = ' . $player->getId())->fetch();
+			$skills_db = $db->query('SELECT `maglevel`, `skill_fist`, `skill_club`, `skill_sword`, `skill_axe`, `skill_dist`, `skill_shielding`, `skill_fishing` FROM `players` WHERE `id` = ' . $player->getId())->fetch();
 
 			$skill_ids = array(
+				POT::SKILL_MAGIC => 'maglevel',
 				POT::SKILL_FIST => 'skill_fist',
 				POT::SKILL_CLUB => 'skill_club',
 				POT::SKILL_SWORD => 'skill_sword',
@@ -200,9 +267,7 @@ if($player->isLoaded() && !$player->isDeleted())
 		unset($storage);
 	}
 
-	if($config['characters']['equipment'])
-	{
-		global $db;
+	if($config['characters']['equipment'] && $db->hasTable('player_items') && $db->hasColumn('player_items', 'pid') && $db->hasColumn('player_items', 'sid') && $db->hasColumn('player_items', 'itemtype')) {
 		$eq_sql = $db->query('SELECT `pid`, `itemtype` FROM player_items WHERE player_id = '.$player->getId().' AND (`pid` >= 1 and `pid` <= 10)');
 		$equipment = array();
 		foreach($eq_sql as $eq)
@@ -286,7 +351,7 @@ WHERE killers.death_id = '".$death['id']."' ORDER BY killers.final_hit DESC, kil
 			}
 		}
 	}
-	else {
+	else if ($db->hasColumn('player_deaths', 'time') && $db->hasColumn('player_deaths', 'level') && $db->hasColumn('player_deaths', 'killed_by') && $db->hasColumn('player_deaths', 'is_player')) {
 		$mostdamage = '';
 		if($db->hasColumn('player_deaths', 'mostdamage_by'))
 			$mostdamage = ', `mostdamage_by`, `mostdamage_is_player`, `unjustified`, `mostdamage_unjustified`';
@@ -401,7 +466,7 @@ WHERE killers.death_id = '".$death['id']."' ORDER BY killers.final_hit DESC, kil
 			'rank' => isset($guild_name) ? $rank_of_player->getName() : null,
 			'link' => isset($guild_name) ? getGuildLink($guild_name) : null
 		),
-		'comment' => !empty($comment) ? wordwrap(nl2br($comment), 60, "<br/>", true) : null,
+		'comment' => !empty($comment) ? nl2br($comment) : null,
 		'skills' => isset($skills) ? $skills : null,
 		'quests_enabled' => $quests_enabled,
 		'quests' => isset($quests) ? $quests : null,

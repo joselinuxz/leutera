@@ -14,10 +14,10 @@ if(!isset($config['downloads']))
 	$config['downloads'] = array(
 		'clients' => array(
 			// name => link to download
-			'Client 11.47' => 'http://www.mediafire.com/file/9232w30it5982b2/Malvera_Global_-_11.46.rar',
-			'Client 10' => 'http://www.mediafire.com/file/2q215ur471uq2tf/MalveraGlobal_-_10.rar'
+			'Client 11.47' => 'http://www.mediafire.com/file/9232w30it5982b2/Malvera_Global_-_11.46.rar'
+			// 'Client 10' => 'http://www.mediafire.com/file/2q215ur471uq2tf/MalveraGlobal_-_10.rar'
 		),
-		'ip_changer' => 'https://static.otland.net/ipchanger.exe', // remove to disable ip changer link
+		// 'ip_changer' => 'https://static.otland.net/ipchanger.exe', // remove to disable ip changer link
 		'minimap' => true // display link to download minimap from https://tibiamaps.io/downloads?
 	);
 }
