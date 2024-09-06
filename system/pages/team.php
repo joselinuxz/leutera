@@ -60,7 +60,7 @@ In addition to introducing you to our team, we also want to be closer to you. Wh
                           <p style="margin: 0"><a href="#">Joe</a></p>
                         </td>
                         <td>
-                          <span>Project Founder and Lead Administrator</span>
+                          <span>Project Founder,lead Administrator and custom manager.</span>
                         </td>
                         <td>
                           <span>07 Febrary 2024</span>
@@ -76,6 +76,17 @@ In addition to introducing you to our team, we also want to be closer to you. Wh
                         <td>
                           <span>01 May 2024</span>
                         </td>
+														                       </td>
+													<tr class="Even" style="height: 32px;">
+                        <td><img src="images/flags/cl.gif" alt=""></td>
+                        <td>
+                          <p style="margin: 0"><a href="#">GM Ruabes</a></p>
+                        </td>
+                        <td>
+                          <span>IT Support and Developer.</span>
+                        </td>
+                        <td>
+                          <span>01 April 2024</span>
 									</tr>
 
 
