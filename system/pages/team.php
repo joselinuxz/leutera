@@ -65,6 +65,17 @@ In addition to introducing you to our team, we also want to be closer to you. Wh
                         <td>
                           <span>07 Febrary 2024</span>
                         </td>
+													<tr class="Even" style="height: 32px;">
+                        <td><img src="images/flags/cl.gif" alt=""></td>
+                        <td>
+                          <p style="margin: 0"><a href="#">Knightmare</a></p>
+                        </td>
+                        <td>
+                          <span>Mapper, scripter and loremaster.</span>
+                        </td>
+                        <td>
+                          <span>01 May 2024</span>
+                        </td>
 									</tr>
 
 
