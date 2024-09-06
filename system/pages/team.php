@@ -57,10 +57,10 @@ In addition to introducing you to our team, we also want to be closer to you. Wh
 						<tr class="Even" style="height: 32px;">
                         <td><img src="images/flags/cl.gif" alt=""></td>
                         <td>
-                          <p style="margin: 0"><a href="#">GOD Joe</a></p>
+                          <p style="margin: 0"><a href="#">Joe</a></p>
                         </td>
                         <td>
-                          <span>Leutera Owner</span>
+                          <span>Project Founder and Lead Administrator</span>
                         </td>
                         <td>
                           <span>07 Febrary 2024</span>
