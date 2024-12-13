@@ -9,3 +9,14 @@ system/cache/twig/
 system/cache/*
 system/php_sessions/*
 .env
+
+config.php
+config.local.php
+
+outfit/*
+vendor/*
+images/guilds/*
+
+api/files/init.lua
+api/files/data/
+api/files/modules/
