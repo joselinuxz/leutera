@@ -1,7 +1,7 @@
 <?php
 defined('MYAAC') or die('Direct access not allowed!');
 ?>
-<div class="well">
+<!-- <div class="well">
 	<div class="header">
 		Events
 	</div>
@@ -14,4 +14,4 @@ defined('MYAAC') or die('Direct access not allowed!');
 			<tr><td>Event Name</td><td><i class="fa fa-clock-o"></i> 2h 5m 10s</td></tr>
 		</table>
 	</div>
-</div>
+</div> -->

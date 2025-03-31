@@ -20,7 +20,7 @@
 <tr>
 <td>
 <div class="TableContainer">
-	<div class="CaptionContainer">
+	<div class="CaptionContainer" style="margin-left:11px;">
 		<div class="CaptionInnerContainer">
 			<span class="CaptionEdgeLeftTop" style="background-image:url({{ template_path }}/images/global/content/box-frame-edge.gif);"></span>
 			<span class="CaptionEdgeRightTop" style="background-image:url({{ template_path }}/images/global/content/box-frame-edge.gif);"></span>
@@ -33,7 +33,7 @@
 			<span class="CaptionEdgeRightBottom" style="background-image:url({{ template_path }}/images/global/content/box-frame-edge.gif);"></span>
 		</div>
 	</div>
-	<table class="Table3" cellpadding="0" cellspacing="0">
+	<table class="Table3" cellpadding="0" cellspacing="0" style="width:100%">
 	<tbody>
 	<tr>
 	<td>
@@ -43,7 +43,7 @@
 	<tr>
 	<td>
 	<div class="TableContentContainer">
-	<table class="TableContent" width="100%" style="border:1px solid #faf0d7;">
+	<table class="TableContent" width="100%" >
 	<tbody>
 
 	{% set rows = rows + 1 %}
@@ -164,7 +164,7 @@
 
 <!-- ACCOUNT INFORMATION -->
 <div class="TableContainer">
-<div class="CaptionContainer">
+<div class="CaptionContainer" style="margin-left:11px;">
 <div class="CaptionInnerContainer">
 	<span class="CaptionEdgeLeftTop" style="background-image:url({{ template_path }}/images/global/content/box-frame-edge.gif);"></span>
 	<span class="CaptionEdgeRightTop" style="background-image:url({{ template_path }}/images/global/content/box-frame-edge.gif);"></span>
@@ -182,7 +182,7 @@
 <div class="InnerTableContainer">
 <table style="width:100%;"><tbody><tr><td>
 <div class="TableContentContainer">
-<table class="TableContent" width="100%" style="border:1px solid #faf0d7;">
+<table class="TableContent" width="100%" >
 <tbody>
 {% set group = player.getGroup() %}
 {% if group.isLoaded() and group.getId() != 1 %}
@@ -214,7 +214,7 @@
 
 <!-- CHARACTER DETAILS -->
 <div class="TableContainer">
-<div class="CaptionContainer">
+<div class="CaptionContainer" style="margin-left:11px;">
 <div class="CaptionInnerContainer">
 	<span class="CaptionEdgeLeftTop" style="background-image:url({{ template_path }}/images/global/content/box-frame-edge.gif);"></span>
 	<span class="CaptionEdgeRightTop" style="background-image:url({{ template_path }}/images/global/content/box-frame-edge.gif);"></span>
@@ -226,7 +226,8 @@
 	<span class="CaptionEdgeLeftBottom" style="background-image:url({{ template_path }}/images/global/content/box-frame-edge.gif);"></span>
 	<span class="CaptionEdgeRightBottom" style="background-image:url({{ template_path }}/images/global/content/box-frame-edge.gif);"></span>
 </div></div>
-<table class="Table3" cellpadding="0" cellspacing="0">
+<table class="Table3" cellpadding="0" cellspacing="0" style="    width: 98%;
+    margin: 0 auto;">
 <tbody>
 <tr>
 <td style="width: 10rem;">
@@ -235,7 +236,7 @@
 <div class="InnerTableContainer">
 <table><tbody><tr><td>
 <div class="TableContentContainer">
-<table class="TableContent" width="100%" style="border:1px solid #faf0d7;"><tbody>
+<table class="TableContent" width="100%" ><tbody>
 <tr bgcolor="{{ getStyle(2) }}">
 <td align="center" style="border:0px; width: 60px;">
 <b>Current outfit:</b>
@@ -259,7 +260,7 @@
 <div class="InnerTableContainer">
 <table><tbody><tr><td>
 <div class="TableContentContainer">
-<table class="TableContent" width="100%" style="border:1px solid #faf0d7;"><tbody>
+<table class="TableContent" width="100%" ><tbody>
 <tr bgcolor="{{ getStyle(2) }}">
 <td align="center">
 <b>Inventory:</b>
@@ -312,7 +313,7 @@
 <div class="InnerTableContainer">
 <table style="width:100%;"><tbody><tr><td>
 <div class="TableContentContainer">
-<table class="TableContent" width="100%" style="border:1px solid #faf0d7;"><tbody>
+<table class="TableContent" width="100%" ><tbody>
 <tr bgcolor="{{ getStyle(2) }}">
 <td style="border:0px; width:15%; text-align: right;"><b>Health:</b></td>
 <td style="border:0px; text-align: center;">
@@ -352,7 +353,7 @@
 <div class="InnerTableContainer">
 <table style="width:100%;"><tbody><tr><td>
 <div class="TableContentContainer">
-<table class="TableContent" width="100%" style="border:1px solid #faf0d7;"><tbody>
+<table class="TableContent" width="100%" ><tbody>
 <tr bgcolor="{{ getStyle(2) }}">
 <td style="border:0px; width:15%; text-align: right;"><b>Experience:</b></td>
 <td style="border:0px; text-align: center;">
@@ -380,7 +381,7 @@ Have <b>{{ player.getExperience() }}</b> and need <b>{{ expLeft }}</b> to Level 
 <div class="InnerTableContainer">
 <table style="width:100%;"><tbody><tr><td>
 <div class="TableContentContainer">
-<table class="TableContent" width="100%" style="border:1px solid #faf0d7;"><tbody>
+<table class="TableContent" width="100%" ><tbody>
 <tr bgcolor="{{ getStyle(2) }}" style="text-align: center;">
 <td style="border:0px;"><img style="" src="https://www.tibiawiki.com.br/images/0/05/Journal_Shield.gif"/></td>
 <td style="border:0px;"><img style="" src="https://www.tibiawiki.com.br/images/3/31/Lasting_Exercise_Rod.gif"/></td>
@@ -425,7 +426,7 @@ Have <b>{{ player.getExperience() }}</b> and need <b>{{ expLeft }}</b> to Level 
 <br>
 <!-- 
 <div class="TableContainer">
-<div class="CaptionContainer">
+<div class="CaptionContainer" style="margin-left:11px;">
 <div class="CaptionInnerContainer">
 	<span class="CaptionEdgeLeftTop" style="background-image:url({{ template_path }}/images/global/content/box-frame-edge.gif);"></span>
 	<span class="CaptionEdgeRightTop" style="background-image:url({{ template_path }}/images/global/content/box-frame-edge.gif);"></span>
@@ -446,7 +447,7 @@ Have <b>{{ player.getExperience() }}</b> and need <b>{{ expLeft }}</b> to Level 
 <div class="InnerTableContainer" id="QuestsCollapseContainer" style="display: none">
 <table style="width:100%;"><tbody><tr><td>
 <div class="TableContentContainer">
-<table class="TableContent" width="100%" style="border:1px solid #faf0d7;">
+<table class="TableContent" width="100%" >
 <tbody>
 {% set i = 0 %}
 {% for name, done in quests %}
@@ -468,7 +469,7 @@ Have <b>{{ player.getExperience() }}</b> and need <b>{{ expLeft }}</b> to Level 
 <br> -->
 <!--
 <div class="TableContainer">
-	<div class="CaptionContainer">
+	<div class="CaptionContainer" style="margin-left:11px;">
 		<div class="CaptionInnerContainer">
 			<span class="CaptionEdgeLeftTop" style="background-image:url({{ template_path }}/images/global/content/box-frame-edge.gif);"></span>
 			<span class="CaptionEdgeRightTop" style="background-image:url({{ template_path }}/images/global/content/box-frame-edge.gif);"></span>
@@ -490,7 +491,7 @@ Have <b>{{ player.getExperience() }}</b> and need <b>{{ expLeft }}</b> to Level 
 				<div class="InnerTableContainer" id="AchievementsCollapseContainer" style="display: none">
 					<table style="width:100%;"><tbody><tr><td>
 								<div class="TableContentContainer">
-									<table class="TableContent" width="100%" style="border:1px solid #faf0d7;">
+									<table class="TableContent" width="100%" >
 										<tbody>
 										{% set i = 0 %}
 										{% if achievementPoints > 0 %}
@@ -536,7 +537,7 @@ Have <b>{{ player.getExperience() }}</b> and need <b>{{ expLeft }}</b> to Level 
 {% if deaths|length > 0 %}
 <!-- DEATHS -->
 <div class="TableContainer">
-	<div class="CaptionContainer">
+	<div class="CaptionContainer" style="margin-left:11px;">
 		<div class="CaptionInnerContainer">
 			<span class="CaptionEdgeLeftTop" style="background-image:url({{ template_path }}/images/global/content/box-frame-edge.gif);"></span>
 			<span class="CaptionEdgeRightTop" style="background-image:url({{ template_path }}/images/global/content/box-frame-edge.gif);"></span>
@@ -557,7 +558,7 @@ Have <b>{{ player.getExperience() }}</b> and need <b>{{ expLeft }}</b> to Level 
 				<div class="InnerTableContainer" id="DeathsCollapseContainer" style="display: none">
 					<table style="width:100%;"><tbody><tr><td>
 								<div class="TableContentContainer">
-									<table class="TableContent" width="100%" style="border:1px solid #faf0d7;">
+									<table class="TableContent" width="100%" >
 										<tbody>
 										{% set i = 0 %}
 										{% for death in deaths %}
@@ -584,7 +585,7 @@ Have <b>{{ player.getExperience() }}</b> and need <b>{{ expLeft }}</b> to Level 
 {% if frags|length > 0 %}
 <!-- FRAGS -->
 <div class="TableContainer">
-	<div class="CaptionContainer">
+	<div class="CaptionContainer" style="margin-left:11px;">
 		<div class="CaptionInnerContainer">
 			<span class="CaptionEdgeLeftTop" style="background-image:url({{ template_path }}/images/global/content/box-frame-edge.gif);"></span>
 			<span class="CaptionEdgeRightTop" style="background-image:url({{ template_path }}/images/global/content/box-frame-edge.gif);"></span>
@@ -605,7 +606,7 @@ Have <b>{{ player.getExperience() }}</b> and need <b>{{ expLeft }}</b> to Level 
 				<div class="InnerTableContainer" id="FragsCollapseContainer" style="display: none">
 					<table style="width:100%;"><tbody><tr><td>
 								<div class="TableContentContainer">
-									<table class="TableContent" width="100%" style="border:1px solid #faf0d7;">
+									<table class="TableContent" width="100%" >
 										<tbody>
 										{% set i = 0 %}
 										{% for frag in frags %}
@@ -631,7 +632,7 @@ Have <b>{{ player.getExperience() }}</b> and need <b>{{ expLeft }}</b> to Level 
 {% if config.signature_enabled %}
 <!-- SIGNATURE -->
 <!--<div class="TableContainer">
-	<div class="CaptionContainer">
+	<div class="CaptionContainer" style="margin-left:11px;">
 		<div class="CaptionInnerContainer">
 			<span class="CaptionEdgeLeftTop" style="background-image:url({{ template_path }}/images/global/content/box-frame-edge.gif);"></span>
 			<span class="CaptionEdgeRightTop" style="background-image:url({{ template_path }}/images/global/content/box-frame-edge.gif);"></span>
@@ -652,7 +653,7 @@ Have <b>{{ player.getExperience() }}</b> and need <b>{{ expLeft }}</b> to Level 
 				<div class="InnerTableContainer" id="FragsCollapseContainer" style="display: none">
 					<table style="width:100%;"><tbody><tr><td>
 								<div class="TableContentContainer">
-									<table class="TableContent" width="100%" style="border:1px solid #faf0d7;">
+									<table class="TableContent" width="100%" >
 										<tbody>
 											<tr>
 												<td align="center">
@@ -709,7 +710,7 @@ Have <b>{{ player.getExperience() }}</b> and need <b>{{ expLeft }}</b> to Level 
 		{% set rows = 0 %}
 
 <div class="TableContainer">
-<div class="CaptionContainer">
+<div class="CaptionContainer" style="margin-left:11px;">
 <div class="CaptionInnerContainer">
 	<span class="CaptionEdgeLeftTop" style="background-image:url({{ template_path }}/images/global/content/box-frame-edge.gif);"></span>
 	<span class="CaptionEdgeRightTop" style="background-image:url({{ template_path }}/images/global/content/box-frame-edge.gif);"></span>
@@ -721,7 +722,8 @@ Have <b>{{ player.getExperience() }}</b> and need <b>{{ expLeft }}</b> to Level 
 	<span class="CaptionEdgeLeftBottom" style="background-image:url({{ template_path }}/images/global/content/box-frame-edge.gif);"></span>
 	<span class="CaptionEdgeRightBottom" style="background-image:url({{ template_path }}/images/global/content/box-frame-edge.gif);"></span>
 </div></div>
-<table class="Table3" cellpadding="0" cellspacing="0">
+<table class="Table3" cellpadding="0" cellspacing="0" style="    width: 98%;
+    margin: 0 auto;">
 <tbody><tr>
 <td>
 <div class="InnerTableContainer">

@@ -37,7 +37,7 @@ if(!$logged)
 	if(!empty($errors))
 		$twig->display('error_box.html.twig', array('errors' => $errors));
 
-	$twig->display('account.login.html.twig', array(
+	$twig->display('accounts.login.html.twig', array(
 		'redirect' => isset($_REQUEST['redirect']) ? $_REQUEST['redirect'] : null,
 		'account' => USE_ACCOUNT_NAME ? 'Name' : 'Number',
 		'error' => isset($errors[0]) ? $errors[0] : null
@@ -119,7 +119,7 @@ $errors = array();
 		$account_players = $account_logged->getPlayersList();
 		$account_players->orderBy('id');
 
-		$twig->display('account.management.html.twig', array(
+		$twig->display('accounts.management.html.twig', array(
 			'welcome_message' => $welcome_message,
 			'recovery_key' => $recovery_key,
 			'email_change' => $email_change,

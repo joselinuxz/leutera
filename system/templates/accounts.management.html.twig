@@ -141,7 +141,7 @@
 		<br/>
 		<a name="Account+Logs" ></a>
 		<h2>Action Log</h2>
-		<table>
+		<table style="width:100%">
 			<tr bgcolor="{{ config.vdarkborder }}" class="white">
 				<th>Action</th><th>Date</th><th>IP</th>
 			</tr>
@@ -160,7 +160,7 @@
 		<br/>
 		<a name="Characters" ></a>
 		<h2>Character list: {{ players|length }} characters.</h2>
-		<table>
+		<table style="width:100%">
 			<tr bgcolor="{{ config.vdarkborder }}" class="white">
 				<th>Name</th><th>Level</th><th>Vocation</th><th>Town</th><th>Last login</th><th>Status</th><th>Hide</th><th>Edit</th>
 			</tr>
@@ -173,7 +173,7 @@
 			{% endfor %}
 		</table>
 		<br/>
-		<table>
+		<table style="width:100%;">
 			<tr>
 				<td>
 					<form action="{{ getLink('account/character/create') }}" method="post" >

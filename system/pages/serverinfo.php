@@ -136,7 +136,7 @@ $title = 'Server info';
                                 <tr>
                                     <td>
                                         <div class="TableContentContainer">
-                                            <table class="TableContent" width="100%" style="border:1px solid #faf0d7;">
+                                            <table class="TableContent" width="100%" >
                                                 <tbody>
                                                     <tr class="Odd">
                                                     <td style="text-align:center;width:50%" class="LabelV175"><b>dwdwdwdwWorld Type</b></td>
@@ -399,7 +399,7 @@ $title = 'Server info';
                                 <tr>
                                     <td>
                                         <div class="TableContentContainer">
-                                            <table class="TableContent" width="100%" style="border:1px solid #faf0d7;">
+                                            <table class="TableContent" width="100%" >
                                                 <tbody>
                                                     <tr class="Even">
                                                         <td class="LabelV175"><b>PvasdcsacsP Protection Zone:</b></td>
@@ -417,7 +417,7 @@ $title = 'Server info';
                                                         <td class="LabelV175"><b>Red Skull:</b></td>
                                                         <td>
                                                             <div class="TableContentContainer">
-                                                                <table class="TableContent" width="100%" style="border:1px solid #faf0d7;">
+                                                                <table class="TableContent" width="100%" >
                                                                     <tbody>
                                                                         <tr class="LabelH">
                                                                             <td>Daily</td>
@@ -447,7 +447,7 @@ $title = 'Server info';
                                                         <td class="LabelV175"><b>Banishment:</b></td>
                                                         <td>
                                                             <div class="TableContentContainer">
-                                                                <table class="TableContent" width="100%" style="border:1px solid #faf0d7;">
+                                                                <table class="TableContent" width="100%" >
                                                                     <tbody>
                                                                         <tr class="LabelH">
                                                                             <td>Daily</td>
@@ -515,7 +515,7 @@ $title = 'Server info';
                                 <tr>
                                     <td>
                                         <div class="TableContentContainer">
-                                                    <table class="TableContent" width="100%" style="border:1px solid #faf0d7;">
+                                                    <table class="TableContent" width="100%" >
                                                     <tbody>
                                                         <tr class="LabelV">
                                                         <th style=" color: #5A2800;background-color: #9ac6e2;">Benefit</th>
@@ -589,7 +589,7 @@ $title = 'Server info';
                                 <tr>
                                     <td>
                                         <div class="TableContentContainer">
-                                            <table class="TableContent" width="100%" style="border:1px solid #faf0d7;">
+                                            <table class="TableContent" width="100%" >
                                                 <tbody>
                                                     <tr class="LabelH">
                                                         <td>Vocation</td>
@@ -856,7 +856,7 @@ $title = 'Server info';
                                 <tr>
                                     <td>
                                         <div class="TableContentContainer">
-                                        <table class="TableContent" width="100%" style="border:1px solid #faf0d7;">
+                                        <table class="TableContent" width="100%" >
                                         <tbody>
                                         <tr class="Odd">
                                             <td><a href="?subtopic=gamefeatures&section=premiumfeatures">Instant Preference Commands </a><img src="templates/tibiarl/images/new.png" alt=""></td>

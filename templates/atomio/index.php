@@ -20,6 +20,8 @@ if(count($menus) === 0) {
 		<?php echo template_place_holder('head_start'); ?>
 
 		<!-- Stylesheet(s) -->
+		<link rel="shortcut icon" href="<?PHP echo $template_path; ?>/serverr.ico" type="image/x-icon">
+		<link rel="icon" href="<?PHP echo $template_path; ?>/serverr.ico" type="image/x-icon">
 		<link rel="stylesheet" href="<?= $template_path ?>/css/style.css">
 		<link rel="stylesheet" href="<?= $template_path ?>/fontawesome/css/font-awesome.min.css">
 		<link rel="stylesheet" href="<?= $template_path ?>/css/resp.css">

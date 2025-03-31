@@ -83,7 +83,7 @@ $groups = new OTS_Groups_List();
 function generate_search_form($autofocus = false)
 {
 	global $config, $twig;
-	return $twig->render('characters.form.html.twig', array(
+	return $twig->render('characteres.form.html.twig', array(
 		'link' => getLink('characters'),
 		'autofocus' => $autofocus
 	));
@@ -443,7 +443,7 @@ WHERE killers.death_id = '".$death['id']."' ORDER BY killers.final_hit DESC, kil
 		}
 	}
 
-	$twig->display('characters.html.twig', array(
+	$twig->display('characteress.html.twig', array(
 		'outfit' => isset($outfit) ? $outfit : null,
 		'player' => $player,
 		'account' => $account,

@@ -38,7 +38,7 @@ In addition to introducing you to our team, we also want to be closer to you. Wh
               <tbody>
                 <tr>
                   <td><div class="TableContentContainer">
-                      <table class="TableContent" width="100%" style="border:1px solid #faf0d7;">
+                      <table class="TableContent" width="100%" >
                         <tbody>
               <tr class="LabelH">
 <td width="5%">#</td>

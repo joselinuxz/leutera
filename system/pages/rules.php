@@ -31,7 +31,7 @@
                 <tr>
                   <td>
                     <div class="TableContentContainer">
-                      <table class="TableContent" style="border:1px solid #faf0d7; height:auto; width:100%;">
+                      <table class="TableContent" style="height:auto; width:100%;">
                         <tbody>
                           <tr>
                             <td>

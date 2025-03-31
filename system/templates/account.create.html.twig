@@ -1,7 +1,7 @@
 {{ hook('HOOK_ACCOUNT_CREATE_BEFORE_FORM') }}
 <form action="{{ getLink('account/create') }}" method="post" id="createaccount">
 	<div class="TableContainer" >
-		<table class="Table5" cellpadding="0" cellspacing="0" >
+		<table class="Table5" cellpadding="0" cellspacing="0" style=" width: 99%; margin: 0 auto;">
 			<div class="CaptionContainer" >
 				<div class="CaptionInnerContainer" >
 					<span class="CaptionEdgeLeftTop" style="background-image:url({{ template_path }}/images/content/box-frame-edge.gif);" /></span>
@@ -25,7 +25,7 @@
 									<div class="TableShadowContainerRightTop"> <div class="TableShadowRightTop" style="background-image:url({{ template_path }}/images/global/content/table-shadow-rt.gif);"></div></div>
 									<div class="TableContentAndRightShadow" style="background-image:url({{ template_path }}/images/global/content/table-shadow-rm.gif);">
 										<div class="TableContentContainer">
-											<table class="TableContent" width="100%" style="border:1px solid #faf0d7;">
+											<table class="TableContent" width="100%" >
 												<tbody>
 
 												{{ hook('HOOK_ACCOUNT_CREATE_BEFORE_ACCOUNT') }}
@@ -138,7 +138,7 @@
 									</div>
 									<div class="TableContentAndRightShadow" style="background-image:url({{ template_path }}/images/global/content/table-shadow-rm.gif);">
 										<div class="TableContentContainer">
-											<table class="TableContent" width="100%" style="border:1px solid #faf0d7;">
+											<table class="TableContent" width="100%">
 												<tbody>
 
 												{{ hook('HOOK_ACCOUNT_CREATE_BEFORE_CHARACTER_NAME') }}
@@ -279,7 +279,7 @@
 									</div>
 									<div class="TableContentAndRightShadow" style="background-image:url({{ template_path }}/images/global/content/table-shadow-rm.gif);">
 										<div class="TableContentContainer">
-											<table class="TableContent" width="100%" style="border:1px solid #faf0d7;">
+											<table class="TableContent" width="100%" >
 												<tbody>
 												<tr>
 													<td colspan="2" ><b>Please select the following check box:</b></td>
