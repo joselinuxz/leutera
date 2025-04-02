@@ -123,7 +123,7 @@ In addition to introducing you to our team, we also want to be closer to you. Wh
 
                 <div class="bottomMargin1">
 		<b>Customer Support</b><br>               
-                <img style="vertical-align: top;"width="28" height="29" src="templates/loleslav/images/redes/4946005.png" alt="YouTube Icon">   Email: <a href="#">dragoraserver@gmail.com</a>
+                <img style="vertical-align: top;"width="28" height="29" src="templates/loleslav/images/redes/4946005.png" alt="YouTube Icon">   Email: <a href="#">leuteraserver@gmail.com</a>
 
                 </div>		
 

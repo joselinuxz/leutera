@@ -1,6 +1,7 @@
 <style>
   .strongrules {
     margin: 0px 0px 0px 20px;
+    
   }
 
   .parraphrules {
@@ -8,7 +9,7 @@
   }
 </style>
 <div class="TableContainer">
-  <div class="NormalCaptionContainer">
+  <div class="CaptionContainer">
     <div class="NormalCaptionInnerContainer">
       <span class="CaptionEdgeLeftTop" style="background-image:url(templates/tibiarl/images/global/content/box-frame-edge.gif);"></span>
       <span class="CaptionEdgeRightTop" style="background-image:url(templates/tibiarl/images/global/content/box-frame-edge.gif);"></span>
@@ -21,11 +22,8 @@
       <span class="CaptionEdgeRightBottom" style="background-image:url(templates/tibiarl/images/global/content/box-frame-edge.gif);"></span>
     </div>
   </div>
-  <table class="Table3" cellspacing="0" cellpadding="0">
-    <tbody>
-      <tr>
-        <td>
-          <div class="InnerTableContainer">
+
+        
             <table style="width:100%;">
               <tbody>
                 <tr>
@@ -140,12 +138,11 @@
                 </tr>
               </tbody>
             </table>
-          </div>
-        </td>
-      </tr>
-    </tbody>
-  </table>
+
+
 </div>
 
+<div style="padding:10px">
 <p>
   If your account or one of your characters got punished, you will find an entry in your rule violation record on your account page. There you can read the reason and the duration of the punishment.</p>
+</div>

@@ -35,7 +35,7 @@ foreach($changelogs as $key => &$log)
 	$i++;
 }
 
-$twig->display('changelog.html.twig', array(
+$twig->display('changelogg.html.twig', array(
 	'changelogs' => $changelogs,
 	'page' => $_page,
 	'next_page' => $next_page,

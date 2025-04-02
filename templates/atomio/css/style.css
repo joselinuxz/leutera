@@ -203,7 +203,7 @@ input[type="password"] {
 }
 
 input[type="search"] {
-  background: var(--primary);
+  background: rgb(39 42 50);
 }
 
 .main {
@@ -365,4 +365,23 @@ input[type="checkbox"] {
 
 .header {
   background: #0f1114;
+  display: flex;
+  align-items: center;
+}
+
+.white {
+  background: #0f1114;
+}
+
+.container {
+  background: #0f1114 !important;
+}
+
+.Table5 {
+  width: 98%;
+  margin: 0 auto;
+}
+
+table.dataTable tbody tr {
+  background: rgb(30, 33, 40) !important;
 }
