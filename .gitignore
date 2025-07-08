@@ -17,6 +17,6 @@ outfit/*
 vendor/*
 images/guilds/*
 
-api/files/init.lua
-api/files/data/
-api/files/modules/
+update/files/init.lua
+update/files/data/
+update/files/modules/
