@@ -255,7 +255,7 @@ if(empty($rank_vocation)){
                         <tbody>
                           <tr class="LabelH">
                             <td>Rank</td>
-							<?php if($config['highscores_outfit']){ ?>
+							<?php if($config['highscores_outfit'] && !empty($config['outfit_images_url'])){ ?>
 							<td style="width: 64px;">Outfit</td>
 							<?php } ?>
                             <td style="width: 40%;">Name</td>
@@ -304,7 +304,7 @@ foreach($skills as $player)
 			$player['value'] = $player['level'];
 echo '
 			<tr style="height: 64px;"><td>' . ($offset + $i) . '.</td>';
-			if($config['highscores_outfit'])
+			if($config['highscores_outfit'] && !empty ($config['outfit_images_url']))
 			echo '<td><img style="position:absolute;margin-top:' . (in_array($player['looktype'], array(75, 266, 302)) ? '-15px;margin-left:5px' : '-45px;margin-left:-25px') . ';" src="' . $config['outfit_images_url'] . '?id=' . $player['looktype'] . ($outfit_addons ? '&addons=' . $player['lookaddons'] : '') . '&head=' . $player['lookhead'] . '&body=' . $player['lookbody'] . '&legs=' . $player['looklegs'] . '&feet=' . $player['lookfeet'] . '" alt="" /></td>';
 
 echo '
@@ -312,6 +312,7 @@ echo '
 				<a href="' . getPlayerLink($player['name'], false) . '">
 					<span style="color: ' . ($player['online'] > 0 ? 'green' : 'red') . '">' . $player['name'] . '</span>
 				</a>';
+				
 				if($config['highscores_vocation']) {
 					if(isset($player['promotion'])) {
 						if((int)$player['promotion'] > 0)

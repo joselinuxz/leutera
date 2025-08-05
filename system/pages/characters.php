@@ -443,7 +443,7 @@ WHERE killers.death_id = '".$death['id']."' ORDER BY killers.final_hit DESC, kil
 		}
 	}
 
-	$twig->display('characteress.html.twig', array(
+	$twig->display('characteresscopyy.html.twig', array(
 		'outfit' => isset($outfit) ? $outfit : null,
 		'player' => $player,
 		'account' => $account,
