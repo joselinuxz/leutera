@@ -1,7 +1,7 @@
 <?php
 // CONFIG
 $files_dir = "/var/www/html/update/files";
-$files_url = "https://imperium-retro.com/update/files";
+$files_url = "https://leutera.online/update/files";
 $files_and_dirs = array("init.lua", "data", "modules", "layouts");
 $checksum_file = "checksums.txt";
 $checksum_update_interval = 60; // seconds
